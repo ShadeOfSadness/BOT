@@ -9,6 +9,7 @@ def geoip(iptext):
 
 iptext = input("Введите IP: ")
 geoip
+g.record_by_addr(iptext)
 rec = g.record_by_addr(iptext)
 x=(f'Код страны: {rec["country_code3"]}\n')
 x+=(f'Название страны: {rec["country_name"]}\n')
